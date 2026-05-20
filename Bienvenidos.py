@@ -7,7 +7,7 @@ import os
 # 'C:/Users/vicky.DESKTOP-TV6SV47/Downloads/pixelcut-export.png'
 
 # Configuración de la página con favicon
-favicon = "https://github.com/soutovicky/Meditrack2/blob/main/Imagenes/Icon.png?raw=true"
+favicon = "https://github.com/soutovicky/Meditrack2026/blob/main/Imagenes/Icon.png?raw=true"
 st.set_page_config(page_title='Meditrack', page_icon=favicon,layout='wide')
 
 
@@ -96,8 +96,8 @@ def get_empleados_por_sector():
 
 # Función para mostrar el logo de la página
 def show_logo():
-    #logo_path = os.path.join(os.path.dirname('C:/Users/vicky.DESKTOP-TV6SV47/Documents/GitHub/Meditrack2/Imagenes/Logo.png'), 'Imagenes', 'Logo.png')
-    #logo = Image.open('C:/Users/vicky.DESKTOP-TV6SV47/Documents/GitHub/Meditrack2/Imagenes/Logo.png')  # Reemplaza con la ruta a tu imagen de logo
+    #logo_path = os.path.join(os.path.dirname('C:/Users/vicky.DESKTOP-TV6SV47/Documents/GitHub/Meditrack2026/Imagenes/Logo.png'), 'Imagenes', 'Logo.png')
+    #logo = Image.open('C:/Users/vicky.DESKTOP-TV6SV47/Documents/GitHub/Meditrack2026/Imagenes/Logo.png')  # Reemplaza con la ruta a tu imagen de logo
     #logo = Image.open(logo_path)
     #st.image(logo, width=500)
     logo_url = "https://github.com/soutovicky/Meditrack2/blob/main/Imagenes/Logo.png?raw=true"
@@ -118,7 +118,7 @@ def show_main_menu():
 def show_forum_news():
     st.subheader("Noticias del Foro")
     forum_news = [
-        {"title": "Inauguración de una nueva área de recreación:", "content": "El geriátrico ha inaugurado una nueva área de recreación para sus residentes. Esta área cuenta con jardines, bancos, juegos de mesa y un espacio para actividades al aire libre, brindando así un entorno agradable y estimulante para el bienestar de los residentes.", "foto": "https://github.com/soutovicky/Meditrack2/blob/main/Imagenes/arearecreacion.jpeg?raw=true"},
+        {"title": "Inauguración de una nueva área de recreación:", "content": "El geriátrico ha inaugurado una nueva área de recreación para sus residentes. Esta área cuenta con jardines, bancos, juegos de mesa y un espacio para actividades al aire libre, brindando así un entorno agradable y estimulante para el bienestar de los residentes.", "foto": "https://github.com/soutovicky/Meditrack2026/blob/main/Imagenes/arearecreacion.jpeg?raw=true"},
         {"title": "Celebración del Día del Abuelo:", "content": """
 *¡Celebremos juntos el Día del Abuelo en el Geriátrico "Amor y Cuidado"!*
 
@@ -148,7 +148,7 @@ Agradecemos de antemano su participación y les animamos a sumarse a esta celebr
 
 Atentamente,  
 El equipo de "Amor y Cuidado"
-""", "foto": "https://github.com/soutovicky/Meditrack2/blob/main/Imagenes/Pagina-Dia-de-los-Abuelos.jpg?raw=true"},
+""", "foto": "https://github.com/soutovicky/Meditrack2026/blob/main/Imagenes/Pagina-Dia-de-los-Abuelos.jpg?raw=true"},
         {"title": "Charla sobre prevención de caídas:", "content": "El geriátrico ofreció una charla informativa sobre la prevención de caídas en personas mayores. La charla fue dictada por un especialista en geriatría y abordó temas como el fortalecimiento muscular, la importancia de mantener un hogar seguro y consejos para evitar accidentes. Los residentes y sus familias recibieron útiles recomendaciones para promover la seguridad y la autonomía en la vida diaria.", "foto": "https://github.com/soutovicky/Meditrack2/blob/main/Imagenes/prevencion.png?raw=true"}
     ]
     for news in forum_news:
