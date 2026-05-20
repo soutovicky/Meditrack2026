@@ -33,7 +33,7 @@ def get_db_connection():
     try:
         user = 'postgres.cetfptmtxzwdmidpxtuv'
         password = 'Meditrack2026'
-        host = 'aws-0-us-west-1.pooler.supabase.com'
+        host = 'db.cetfptmtxzwdmidpxtuv.supabase.co'
         port = '5432'
         dbname = 'postgres'
         conn = psycopg2.connect(
