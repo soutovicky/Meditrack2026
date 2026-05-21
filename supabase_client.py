@@ -15,5 +15,5 @@ def get_supabase_client():
     return create_client(url, key)
 
 def db():
-    """Shortcut para obtener el cliente y el schema meditrack"""
+    """Shortcut para obtener el cliente con el schema meditrack"""
     return get_supabase_client().schema("meditrack")
