@@ -1,9 +1,10 @@
+from gettext import install
+
 import streamlit as st
 from PIL import Image
 import pandas as pd
 import psycopg2
 import os
-
 # 'C:/Users/vicky.DESKTOP-TV6SV47/Downloads/pixelcut-export.png'
 
 # Configuración de la página con favicon
@@ -29,24 +30,16 @@ def add_custom_css():
 
 
 # Configuración de la conexión a la base de datos
+@st.cache_resource
 def get_db_connection():
-    try:
-        user = 'postgres.cetfptmtxzwdmidpxtuv'
-        password = 'Meditrack2026'
-        host = 'db.cetfptmtxzwdmidpxtuv.supabase.co'
-        port = '5432'
-        dbname = 'postgres'
-        conn = psycopg2.connect(
-            dbname=dbname,
-            user=user,
-            password=password,
-            host=host,
-            port=port
-        )
-        return conn
-    except Exception as e:
-        st.error(f"Error al conectar a la base de datos: {e}")
-        return None
+    conn = psycopg2.connect(
+        dbname='postgres',
+        user='postgres.cetfptmtxzwdmidpxtuv',
+        password='Meditrack2026',
+        host='db.cetfptmtxzwdmidpxtuv.supabase.co',
+        port='5432'
+    )
+    return conn
 
 col1, col2 = st.columns(2, gap="large")
 
@@ -101,7 +94,7 @@ def show_logo():
     #logo = Image.open(logo_path)
     #st.image(logo, width=500)
     logo_url = "https://github.com/soutovicky/Meditrack2/blob/main/Imagenes/Logo.png?raw=true"
-    st.image(logo_url, use_column_width=True, width=500)
+    st.image(logo_url, width=500)
 
 # Función para mostrar el menú principal
 def show_main_menu():
